@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Swift-constructions/static/css/main.c8896287.css",
+    "main.js": "/Swift-constructions/static/js/main.93107d1f.js",
+    "static/js/453.8cc20e23.chunk.js": "/Swift-constructions/static/js/453.8cc20e23.chunk.js",
+    "static/media/Aboutimg.jpg": "/Swift-constructions/static/media/Aboutimg.01227918c3eed2e06dbe.jpg",
+    "static/media/sean-pollock-PhYq704ffdA-unsplash.jpg": "/Swift-constructions/static/media/sean-pollock-PhYq704ffdA-unsplash.87837059c319c6378f7a.jpg",
+    "static/media/bgimg.jpg": "/Swift-constructions/static/media/bgimg.380ca44785667190d492.jpg",
+    "static/media/pexels-john-lee-6434779.jpg": "/Swift-constructions/static/media/pexels-john-lee-6434779.3e6bd9bf9822a09a81a8.jpg",
+    "static/media/client3.jpg": "/Swift-constructions/static/media/client3.fb54fea5f741c0bf8fc7.jpg",
+    "static/media/client4.jpg": "/Swift-constructions/static/media/client4.af98ca0902c5d9e11266.jpg",
+    "static/media/client2.jpg": "/Swift-constructions/static/media/client2.b5d8abf406a60e249fec.jpg",
+    "static/media/swift-constructions-high-resolution-logo-white-transparent.png": "/Swift-constructions/static/media/swift-constructions-high-resolution-logo-white-transparent.751609b6db22fb4b0327.png",
+    "static/media/swift-constructions-high-resolution-logo-black-transparent.png": "/Swift-constructions/static/media/swift-constructions-high-resolution-logo-black-transparent.7e0e96919f2f8965e3ed.png",
+    "static/media/road.png": "/Swift-constructions/static/media/road.c0514cac2e6243485de2.png",
+    "static/media/location-pin.png": "/Swift-constructions/static/media/location-pin.5a9cb4656e704ad6fd22.png",
+    "static/media/engineer.png": "/Swift-constructions/static/media/engineer.9c57d10daad09772cce4.png",
+    "static/media/client1.jpg": "/Swift-constructions/static/media/client1.2206fa2846ce39b07076.jpg",
+    "static/media/cancel.png": "/Swift-constructions/static/media/cancel.5949e4245eac826e4fad.png",
+    "static/media/civil-engineering.png": "/Swift-constructions/static/media/civil-engineering.09625b569cf556411b40.png",
+    "static/media/theodolite.png": "/Swift-constructions/static/media/theodolite.44a7f621702fafe34728.png",
+    "index.html": "/Swift-constructions/index.html",
+    "main.c8896287.css.map": "/Swift-constructions/static/css/main.c8896287.css.map",
+    "main.93107d1f.js.map": "/Swift-constructions/static/js/main.93107d1f.js.map",
+    "453.8cc20e23.chunk.js.map": "/Swift-constructions/static/js/453.8cc20e23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8896287.css",
+    "static/js/main.93107d1f.js"
+  ]
+}
