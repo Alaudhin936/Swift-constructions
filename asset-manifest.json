@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Swift-constructions/static/css/main.c8896287.css",
+    "main.css": "/Swift-constructions/static/css/main.fcc25216.css",
     "main.js": "/Swift-constructions/static/js/main.93107d1f.js",
     "static/js/453.8cc20e23.chunk.js": "/Swift-constructions/static/js/453.8cc20e23.chunk.js",
     "static/media/Aboutimg.jpg": "/Swift-constructions/static/media/Aboutimg.01227918c3eed2e06dbe.jpg",
@@ -20,12 +20,12 @@
     "static/media/civil-engineering.png": "/Swift-constructions/static/media/civil-engineering.09625b569cf556411b40.png",
     "static/media/theodolite.png": "/Swift-constructions/static/media/theodolite.44a7f621702fafe34728.png",
     "index.html": "/Swift-constructions/index.html",
-    "main.c8896287.css.map": "/Swift-constructions/static/css/main.c8896287.css.map",
+    "main.fcc25216.css.map": "/Swift-constructions/static/css/main.fcc25216.css.map",
     "main.93107d1f.js.map": "/Swift-constructions/static/js/main.93107d1f.js.map",
     "453.8cc20e23.chunk.js.map": "/Swift-constructions/static/js/453.8cc20e23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8896287.css",
+    "static/css/main.fcc25216.css",
     "static/js/main.93107d1f.js"
   ]
 }
