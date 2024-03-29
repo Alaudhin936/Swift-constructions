@@ -227,7 +227,7 @@ ul li:hover {
 }
 .content-container {
   display: flex;
-  height: 38em;
+  height: 42em;
   gap: 30px;
   font-family: "Times New Roman", Times, serif;
   flex-direction: column;
