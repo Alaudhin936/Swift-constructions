@@ -1,0 +1,733 @@
+.home-page {
+  background-image: url("./43543.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+#navv {
+  background-color: white;
+  box-shadow: 0 0 10px black;
+}
+#navv li:hover {
+  color: green;
+}
+#navv div {
+  color: black;
+}
+#navv ul li {
+  color: black;
+}
+.nav-bar .scrolled {
+  background-color: white;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.nav-bar div {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+}
+.lesser img {
+  width: 35px;
+}
+.lesser nav {
+  display: flex;
+  padding: 10px 0px;
+  position: absolute;
+  text-align: center;
+  font-size: xx-small;
+}
+.lesser nav ul li {
+  position: relative;
+  left: -25px;
+  margin: 5px 0px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 0px 5px;
+}
+nav ul li img {
+  margin: 0px 7px;
+}
+.lesser nav ul {
+  margin: 10px 0px;
+  text-align: left;
+  border: 1px solid;
+  position: relative;
+  top: 40px;
+  left: -315px;
+
+  background-color: #3d3d3d;
+  width: 4em;
+  height: 65vh;
+  animation-name: moveright;
+  animation-duration: 1s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  animation-play-state: running;
+  display: flex;
+  flex-direction: column;
+}
+.lesser {
+  display: none;
+}
+img {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul li {
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  transition: 0.1s ease-in-out;
+}
+nav ul li:hover {
+  color: green;
+}
+.home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 2em;
+  height: 110vh;
+}
+.home-body .name {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 3.5em;
+}
+.home-body .work {
+  width: 15ch; /* Adjust based on the length of your text */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  animation: typing 2s steps(25, end), backspace 3s 2s steps(25, end) infinite;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+}
+.social-media {
+  display: flex;
+  gap: 22px;
+}
+.social-media img {
+  width: 20px;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+  border-color: white;
+}
+.social-media img:hover {
+  background-color: rgb(65, 189, 65);
+  cursor: pointer;
+}
+.about-page {
+  box-shadow: 0 0 5px black;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+  padding: 20px;
+}
+.my-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-img img {
+  width: 27em;
+  height: 80vh;
+  border: 2px solid;
+  border-color: grey;
+  padding: 3px;
+  background-color: gray;
+}
+.my-text {
+  display: flex;
+  flex-direction: column;
+}
+.my-text h1 {
+  font-size: xx-large;
+}
+.skill-img {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.buttons button {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  height: 7vh;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(106, 172, 19);
+}
+.buttons button:hover {
+  background-color: gray;
+}
+.buttons .hire-btn {
+  background-color: #2b2a2a;
+}
+.skill-img img {
+  width: 60px;
+  transition: 0.3s ease-in-out;
+}
+.skill-img img:hover {
+  transform: scale(1.2);
+}
+@keyframes moveright {
+  from {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15ch;
+  } /* Adjust based on the length of your text */
+}
+
+@keyframes backspace {
+  0%,
+  100% {
+    width: 19ch;
+  } /* Adjust based on the length of your text */
+}
+@media (max-width: 1000px) {
+  .visit-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .visit-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  body {
+    background-size: 60em;
+  }
+  .visit-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .visit-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-page {
+    flex-direction: column;
+  }
+  .my-img img {
+    width: 370px;
+    height: 70vh;
+  }
+}
+.absolute {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.project-container {
+  position: relative;
+  width: 80%;
+  padding: 20px;
+  overflow: hidden;
+}
+.project-img {
+  width: 100%;
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+#buttons {
+  position: relative;
+  left: 20px;
+}
+#buttons img {
+  width: 30px;
+  margin: 0px 30px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgb(34, 179, 24);
+}
+.project-img img {
+  width: 200%;
+  height: 400px;
+}
+
+.whatido {
+  padding: 10px;
+  display: flex;
+
+  box-shadow: 0 0 5px black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.do-texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.do-texts h4 {
+  align-items: center;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.do-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.skill-container img {
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(155, 233, 30);
+}
+.skilll {
+  display: flex;
+  box-shadow: 0 0 3px black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  min-height: 53vh;
+}
+.map{
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.send-query{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 70px;
+  
+}
+
+.send-query input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+ border-bottom: 1px solid;
+  outline: none;
+  background: none;
+}
+.send-query div{
+  margin: 50px 0px;
+}
+.my-enquiry{
+  padding: 30px;
+  margin: 20px 0px;
+  box-shadow: 0 0 5px black;
+}
+.contact-type div{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact-type img{
+  width: 80px;
+  background-color: green;
+  border-radius: 60px;
+  padding: 10px;
+}
+
+
+footer{
+  font-size: small;
+  height: 12vh;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.contact-type{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact h1{
+  text-align: center;
+}
+.skilll div {
+  text-align: center;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.myprojects .project-container {
+  width: 60%;
+}
+
+#mass {
+  transition: 1s ease-in-out;
+  animation-name: formass;
+  animation-duration: 2.2\s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+.visit-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.doss img {
+  width: 400px;
+  height: 36vh;
+}
+
+
+
+
+.doss {
+  border-radius: 2px;
+  box-shadow: 0 0 3px black;
+  padding: 10px;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+}
+.myy-enquiry{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+@keyframes formass {
+  from {
+    transform: translateY(100%);
+  }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.myprojects {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px black;
+  padding: 10px 0px;
+  justify-content: center;
+}
+@keyframes frromtop {
+  from {
+    transform: translateY(200%);
+  }
+}
+.map img{
+  width: 400px;
+  height: 68vh;
+}
+.absolute img {
+  width: 30px;
+  animation-name: frromtop;
+  animation-duration: 0.5s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  animation-play-state: running;
+  top: 33em;
+  left: 76em;
+  position: relative;
+}
+.sendmsg{
+  margin: 10px 0px;
+  border: none;
+  background-color: rgb(67, 182, 26);
+  color: white;
+  height: 7vh;
+}
+@media (max-width: 860px) {
+  .myy-enquiry{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+  }
+  
+  .send-query{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+  .visit-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  nav {
+    display: none;
+  }
+  #buttons {
+    left: 90px;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .absolute img {
+    width: 30px;
+    animation-name: frromtop;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-play-state: running;
+    top: 33em;
+    left: 35em;
+    position: relative;
+  }
+  .buttons button {
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    height: 6vh;
+    width: 110px;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(106, 172, 19);
+  }
+  .skill-img {
+  }
+  .skill-img img {
+    width: 33px;
+  }
+  .lesser {
+    display: flex;
+  }
+
+  .home-body .name {
+    font-size: 2.5em;
+  }
+  .home-body .work {
+    font-size: 1.45em;
+  }
+  .home-body .social-media {
+    gap: 14px;
+    display: flex;
+  }
+  .home-body .social-media img {
+    width: 15px;
+  }
+
+  .lesser nav {
+    display: flex;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    font-size: xx-small;
+  }
+  .lesser nav ul li {
+    position: relative;
+    left: -25px;
+    margin: 5px 0px;
+  }
+  nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+  }
+  nav ul li img {
+    margin: 0px 7px;
+  }
+  .lesser nav ul {
+    margin: 10px 0px;
+    text-align: left;
+    border: 1px solid;
+    position: relative;
+    top: 40px;
+    left: -395px;
+    background-color: #3d3d3d;
+    width: 4em;
+    height: 66.5vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 630px) {
+  #buttons {
+    left: 70px;
+    display: flex;
+    flex-direction: row;
+  }
+  .project-img img {
+    width: 3900px;
+    height: 300px;
+  }
+  #buttons img {
+    width: 20px;
+  }
+}
+@media (max-width: 450px) {
+  body{
+    background-size: 90em;
+  }
+  textarea{
+    width: 220px;
+  }
+  .home-body {
+    height: 95vh;
+  }
+  .myprojects .project-container {
+    width: 290px;
+  }
+  .project-container {
+    position: relative;
+    left: -17px;
+  }
+  .visit-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .doss {
+    width: 300px;
+  }
+  .visit-container img {
+    width: 200px;
+    height: 20vh;
+  }
+  #buttons {
+    left: 63px;
+  }
+  .absolute img {
+    width: 30px;
+    animation-name: frromtop;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-play-state: running;
+    top: 35em;
+    left: 22em;
+    position: relative;
+  }
+
+  .absolute {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  .my-img img {
+    width: 15em;
+    border: 2px solid;
+  }
+  .lesser nav {
+    display: flex;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    font-size: xx-small;
+  }
+  .lesser nav ul li {
+    position: relative;
+    left: -25px;
+    margin: 5px 0px;
+  }
+  nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+  }
+  nav ul li img {
+    margin: 0px 7px;
+  }
+  .lesser nav ul {
+    margin: 10px 0px;
+    text-align: left;
+    border: 1px solid;
+    position: relative;
+    top: 40px;
+    left: -300px;
+    background-color: #3d3d3d;
+    width: 4em;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .my-img img {
+    height: 40vh;
+  }
+}
+@media (max-width: 550px) {
+  .absolute {
+    left: -135px;
+  }
+  .map img{
+    width: 320px;
+  }
+  .contact-type {
+    flex-direction: column;
+    gap: 20px;
+
+  }
+  .contact-type img{
+    width: 60px;
+  }
+  .project-img {
+    transition: 3s ease-in-out;
+  }
+  .project-img img {
+    width: 600%;
+  }
+}
