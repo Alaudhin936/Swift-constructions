@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Swift-constructions/static/css/main.5eed4b1c.css",
-    "main.js": "/Swift-constructions/static/js/main.93107d1f.js",
+    "main.css": "/Swift-constructions/static/css/main.bb5c99d4.css",
+    "main.js": "/Swift-constructions/static/js/main.e792522a.js",
     "static/js/453.8cc20e23.chunk.js": "/Swift-constructions/static/js/453.8cc20e23.chunk.js",
     "static/media/Aboutimg.jpg": "/Swift-constructions/static/media/Aboutimg.01227918c3eed2e06dbe.jpg",
     "static/media/sean-pollock-PhYq704ffdA-unsplash.jpg": "/Swift-constructions/static/media/sean-pollock-PhYq704ffdA-unsplash.87837059c319c6378f7a.jpg",
@@ -13,6 +13,7 @@
     "static/media/swift-constructions-high-resolution-logo-white-transparent.png": "/Swift-constructions/static/media/swift-constructions-high-resolution-logo-white-transparent.751609b6db22fb4b0327.png",
     "static/media/swift-constructions-high-resolution-logo-black-transparent.png": "/Swift-constructions/static/media/swift-constructions-high-resolution-logo-black-transparent.7e0e96919f2f8965e3ed.png",
     "static/media/road.png": "/Swift-constructions/static/media/road.c0514cac2e6243485de2.png",
+    "static/media/arrow.png": "/Swift-constructions/static/media/arrow.06cf7f3acb9df18b6a21.png",
     "static/media/location-pin.png": "/Swift-constructions/static/media/location-pin.5a9cb4656e704ad6fd22.png",
     "static/media/engineer.png": "/Swift-constructions/static/media/engineer.9c57d10daad09772cce4.png",
     "static/media/client1.jpg": "/Swift-constructions/static/media/client1.2206fa2846ce39b07076.jpg",
@@ -20,12 +21,12 @@
     "static/media/civil-engineering.png": "/Swift-constructions/static/media/civil-engineering.09625b569cf556411b40.png",
     "static/media/theodolite.png": "/Swift-constructions/static/media/theodolite.44a7f621702fafe34728.png",
     "index.html": "/Swift-constructions/index.html",
-    "main.5eed4b1c.css.map": "/Swift-constructions/static/css/main.5eed4b1c.css.map",
-    "main.93107d1f.js.map": "/Swift-constructions/static/js/main.93107d1f.js.map",
+    "main.bb5c99d4.css.map": "/Swift-constructions/static/css/main.bb5c99d4.css.map",
+    "main.e792522a.js.map": "/Swift-constructions/static/js/main.e792522a.js.map",
     "453.8cc20e23.chunk.js.map": "/Swift-constructions/static/js/453.8cc20e23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5eed4b1c.css",
-    "static/js/main.93107d1f.js"
+    "static/css/main.bb5c99d4.css",
+    "static/js/main.e792522a.js"
   ]
 }
