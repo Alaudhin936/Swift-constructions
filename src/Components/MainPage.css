@@ -487,7 +487,29 @@ ul li:hover {
     display: flex;
   }
 }
+@media(max-width:380px){
+  .majja{
+    width: 210px;
+  }
+  .about-us img {
+    width: 16em;
+    height: 24em;
+  }
+  .responsive-bar {
+    width: 280px;
+    top: 110px;
+    left: 55px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 20px black;
+    flex-direction: column;
+  }
+} 
 @media (max-width: 450px) {
+  .majja{
+    width: 260px;
+  }
   .lower-btn div {
     width: 100px;
   }
@@ -501,7 +523,7 @@ ul li:hover {
     height: 80%;
   }
   .about-us img {
-    width: 22em;
+    width: 20em;
     height: 26em;
   }
 
@@ -513,9 +535,9 @@ ul li:hover {
     height: 90vh;
   }
   .responsive-bar {
-    width: 350px;
+    width: 325px;
     top: 110px;
-    left: 15px;
+    left: 30px;
     position: absolute;
     align-items: center;
     display: flex;
