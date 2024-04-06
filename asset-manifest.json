@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Swift-constructions/static/css/main.bb5c99d4.css",
-    "main.js": "/Swift-constructions/static/js/main.e792522a.js",
+    "main.css": "/Swift-constructions/static/css/main.560f6132.css",
+    "main.js": "/Swift-constructions/static/js/main.a5d86351.js",
     "static/js/453.8cc20e23.chunk.js": "/Swift-constructions/static/js/453.8cc20e23.chunk.js",
     "static/media/Aboutimg.jpg": "/Swift-constructions/static/media/Aboutimg.01227918c3eed2e06dbe.jpg",
     "static/media/sean-pollock-PhYq704ffdA-unsplash.jpg": "/Swift-constructions/static/media/sean-pollock-PhYq704ffdA-unsplash.87837059c319c6378f7a.jpg",
@@ -21,12 +21,12 @@
     "static/media/civil-engineering.png": "/Swift-constructions/static/media/civil-engineering.09625b569cf556411b40.png",
     "static/media/theodolite.png": "/Swift-constructions/static/media/theodolite.44a7f621702fafe34728.png",
     "index.html": "/Swift-constructions/index.html",
-    "main.bb5c99d4.css.map": "/Swift-constructions/static/css/main.bb5c99d4.css.map",
-    "main.e792522a.js.map": "/Swift-constructions/static/js/main.e792522a.js.map",
+    "main.560f6132.css.map": "/Swift-constructions/static/css/main.560f6132.css.map",
+    "main.a5d86351.js.map": "/Swift-constructions/static/js/main.a5d86351.js.map",
     "453.8cc20e23.chunk.js.map": "/Swift-constructions/static/js/453.8cc20e23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb5c99d4.css",
-    "static/js/main.e792522a.js"
+    "static/css/main.560f6132.css",
+    "static/js/main.a5d86351.js"
   ]
 }
