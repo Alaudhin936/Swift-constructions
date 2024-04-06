@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./MainPage.css";
 import c1 from "./client1.jpg";
+import toup from "./arrow.png";
 import c2 from "./client2.jpg";
 import c3 from "./client3.jpg";
 import c4 from "./client4.jpg";
@@ -88,22 +89,25 @@ export default function MainPage() {
         behavior: "smooth",
       });
     }
-    if(window.scrollY>=1500 && window.scrollY<=1800){
+    if (window.scrollY >= 1500 && window.scrollY <= 1800) {
       window.scrollBy({
-        top:-1120,behavior:"smooth"
-      })
+        top: -1120,
+        behavior: "smooth",
+      });
     }
   }
-  function navigatetoserviceinlap(){
-    if(window.scrollY>=0 && window.scrollY<200){
+  function navigatetoserviceinlap() {
+    if (window.scrollY >= 0 && window.scrollY < 200) {
       window.scrollBy({
-        top:1600,behavior:"smooth"
-      })
+        top: 1600,
+        behavior: "smooth",
+      });
     }
-    if(window.scrollY>=460 && window.scrollY<=500){
+    if (window.scrollY >= 460 && window.scrollY <= 500) {
       window.scrollBy({
-        top:1120,behavior:"smooth"
-      })
+        top: 1120,
+        behavior: "smooth",
+      });
     }
   }
   function handleAnimation() {
@@ -239,6 +243,9 @@ export default function MainPage() {
                 <img style={{ borderColor: "white" }} src={mail} />
               </a>
             </div>
+          </div>
+          <div className={maja?"toUpImg":"blabla"}>
+            <img src={toup} style={{cursor:"pointer",zIndex:1000}} onClick={navigatetoHomeinlap}/>
           </div>
         </div>
         <div className="about">

@@ -134,7 +134,6 @@ body {
   transition: 0.5s ease-in-out;
   background-color: white;
   padding: 10px;
- 
 }
 .lower-btn div:hover {
   background-color: purple;
@@ -227,7 +226,7 @@ ul li:hover {
 }
 .content-container {
   display: flex;
-  height: 38em;
+  height: 42em;
   gap: 30px;
   font-family: "Times New Roman", Times, serif;
   flex-direction: column;
@@ -383,12 +382,12 @@ ul li:hover {
 .services h1 {
   text-align: center;
 }
-.anm{
+.anm {
   transition: 1s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  
+
   justify-content: center;
   animation-name: anmi;
   animation-duration: 1s;
@@ -396,10 +395,11 @@ ul li:hover {
   animation-direction: normal;
   animation-play-state: running;
 }
-@keyframes anmi{
-  from{
+@keyframes anmi {
+  from {
     opacity: 0;
-  }to{
+  }
+  to {
     opacity: 1;
   }
 }
@@ -436,7 +436,6 @@ ul li:hover {
   }
 }
 @media (max-width: 550px) {
-  
   .nav-page {
     justify-content: space-between;
   }
@@ -487,12 +486,40 @@ ul li:hover {
     display: flex;
   }
 }
+.toUpImg {
+
+  display: flex;
+  align-items: center;
+}
+.blabla{
+  display: none;
+}
+.toUpImg img {
+  animation-name: jumptop;
+  animation-duration: 2s;
+  transition: 1s ease-in-out;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  animation-play-state: running;
+  display: flex;
+  max-width: 30px;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  max-width: 30px;
+  top: 500px;
+  right: 10px;
+  justify-content: flex-end;
+}
 @media (max-width: 450px) {
+  .toUpImg img{
+    top: 600px;
+  }
   .lower-btn div {
     width: 100px;
   }
   .customer-review {
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .upper {
@@ -513,9 +540,9 @@ ul li:hover {
     height: 90vh;
   }
   .responsive-bar {
-    width: 350px;
+    width: 300px;
     top: 110px;
-    left: 15px;
+    left: 45px;
     position: absolute;
     align-items: center;
     display: flex;
