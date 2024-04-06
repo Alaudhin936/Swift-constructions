@@ -59,7 +59,7 @@ export default function MainPage() {
     }
   });
   function hanldeanim() {
-    if (window.scrollY > 2600) {
+    if (window.scrollY > 2800) {
       setAnim(true);
     } else {
       setAnim(false);
