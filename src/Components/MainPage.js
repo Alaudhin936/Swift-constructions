@@ -32,8 +32,34 @@ export default function MainPage() {
   const [animation, setAnimation] = useState(false);
   const [jumptop, setJumptop] = useState(false);
   const [anim, setAnim] = useState(false);
+  const [count, setCount] = useState(0);
+  const [count1, setCount1] = useState(0);
+  useEffect(() => {
+    if (window.scrollY > 2800) {
+      const interval = setInterval(() => {
+        setCount1((prevCo) => (prevCo < 49 ? prevCo + 1 : prevCo));
+      }, 50);
+      return () => {
+        clearInterval(interval);
+      };
+    } else {
+      setCount1(0);
+    }
+  });
+  useEffect(() => {
+    if (window.scrollY > 2800) {
+      const interval = setInterval(() => {
+        setCount((prevCount) => (prevCount < 99 ? prevCount + 1 : prevCount));
+      }, 50);
+      return () => {
+        clearInterval(interval);
+      };
+    } else {
+      setCount(0);
+    }
+  });
   function hanldeanim() {
-    if (window.scrollY > 2500) {
+    if (window.scrollY > 2800) {
       setAnim(true);
     } else {
       setAnim(false);
@@ -74,6 +100,11 @@ export default function MainPage() {
       window.removeEventListener("scroll", handleAnimation);
     };
   });
+  function toAbout() {
+    let locate = document.querySelector("#aboutclass");
+    locate.scrollIntoView({ behavior: "smooth", block: "start" });
+    handleCancel();
+  }
   function navigatetoHomeinlap() {
     if (window.scrollY > 0) {
       window.scrollBy({
@@ -82,34 +113,13 @@ export default function MainPage() {
       });
     }
   }
-  function navigatetoAboutinlap() {
-    if (window.scrollY >= 0 && window.scrollY < 200) {
-      window.scrollBy({
-        top: 480,
-        behavior: "smooth",
-      });
-    }
-    if (window.scrollY >= 1500 && window.scrollY <= 1800) {
-      window.scrollBy({
-        top: -1120,
-        behavior: "smooth",
-      });
-    }
+  function toProjects() {
+    let locate = document.getElementById("projectClass");
+    locate.scrollIntoView({ behavior: "smooth", top: 200 });
+
+    handleCancel();
   }
-  function navigatetoserviceinlap() {
-    if (window.scrollY >= 0 && window.scrollY < 200) {
-      window.scrollBy({
-        top: 1600,
-        behavior: "smooth",
-      });
-    }
-    if (window.scrollY >= 460 && window.scrollY <= 500) {
-      window.scrollBy({
-        top: 1120,
-        behavior: "smooth",
-      });
-    }
-  }
+
   function handleAnimation() {
     if (window.scrollY > 390) {
       setAnimation(true);
@@ -143,32 +153,10 @@ export default function MainPage() {
     }
     handleCancel();
   }
-  function navigatToAbout() {
-    if (window.scrollY >= 0 && window.scrollY < 530) {
-      window.scrollBy({
-        top: 530,
-        behavior: "smooth",
-      });
-    } else if (window.scrollY >= 2600 && window.scrollY <= 2900) {
-      window.scrollBy({
-        top: -2160,
-        behavior: "smooth",
-      });
-    }
-    handleCancel();
-  }
-  function navigateToService() {
-    if (window.scrollY <= 0 && window.scrollY <= 100) {
-      window.scrollBy({
-        top: 2700,
-        behavior: "smooth",
-      });
-    } else if (window.scrollY >= 530 && window.scrollY <= 580) {
-      window.scrollBy({
-        top: 2150,
-        behavior: "smooth",
-      });
-    }
+
+  function toService() {
+    let locate = document.getElementById("serviceClass");
+    locate.scrollIntoView({ behavior: "smooth" });
     handleCancel();
   }
   return (
@@ -201,9 +189,9 @@ export default function MainPage() {
               >
                 <ul>
                   <li onClick={navigateToHome}>Home</li>
-                  <li onClick={navigatToAbout}>About</li>
-                  <li onClick={navigateToService}>Services</li>
-                  <li>Design and projects</li>
+                  <li onClick={toAbout}>About</li>
+                  <li onClick={toService}>Services</li>
+                  <li onClick={toProjects}>Design and projects</li>
                   <li>Contact Us</li>
                 </ul>
               </div>
@@ -211,9 +199,9 @@ export default function MainPage() {
             <nav>
               <ul>
                 <li onClick={navigatetoHomeinlap}>Home</li>
-                <li onClick={navigatetoAboutinlap}>About</li>
-                <li onClick={navigatetoserviceinlap}>Services</li>
-                <li>Design and projects</li>
+                <li onClick={toAbout}>About</li>
+                <li onClick={toService}>Services</li>
+                <li onClick={toProjects}>Design and projects</li>
                 <li>Contact Us</li>
               </ul>
             </nav>
@@ -244,11 +232,17 @@ export default function MainPage() {
               </a>
             </div>
           </div>
-          <div className={maja?"toUpImg":"blabla"}>
-            <img src={toup} style={{cursor:"pointer",zIndex:1000}} onClick={navigatetoHomeinlap}/>
+          <div className={maja ? "toUpImg" : "blabla"}>
+            <img
+              src={toup}
+              style={{ cursor: "pointer", zIndex: 1000 }}
+              onClick={navigatetoHomeinlap}
+            />
           </div>
         </div>
-        <div className="about">
+        <br></br>
+        <br></br>
+        <div className="about" id="aboutclass">
           <h1>Who We Are</h1>
           <div className="about-us">
             <div>
@@ -312,7 +306,7 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <div className="services">
+        <div className="services" id="serviceClass">
           <h1>What We Do</h1>
           <div className="our-skills">
             <div className={jumptop ? "majja" : "each-skill"}>
@@ -386,7 +380,10 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <br></br>
+        <div className="bla" id="projectClass">
+          <br></br>
+          <h1 style={{ textAlign: "center" }}>Clients And Projects</h1>
+        
         <div className="customer-review">
           <br></br>
           <h2 style={{ color: "gray" }}>See What Our Client Says</h2>
@@ -502,6 +499,25 @@ export default function MainPage() {
           <div className="lower-btn">
             <div onClick={handlecmttoup}>Read Less</div>
             <div onClick={handlecmttodown}> Read More..</div>
+          </div>
+          <br></br>
+          <br></br> <br></br>
+          <br></br>
+        </div>
+        
+        <div className="clients" >
+            <div className="c-100">
+             
+              <h1 style={{ textAlign: "center" }}>
+                {count}+<br></br>Projects
+              </h1>
+            </div>
+            <div className="p-100">
+              
+              <h1 style={{ textAlign: "center" }}>
+                {count1}+<br></br>Active Clients
+              </h1>
+            </div>
           </div>
         </div>
       </div>
