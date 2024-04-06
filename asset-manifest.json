@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Swift-constructions/static/css/main.560f6132.css",
-    "main.js": "/Swift-constructions/static/js/main.acc64e8b.js",
+    "main.js": "/Swift-constructions/static/js/main.efa2f981.js",
     "static/js/453.8cc20e23.chunk.js": "/Swift-constructions/static/js/453.8cc20e23.chunk.js",
     "static/media/Aboutimg.jpg": "/Swift-constructions/static/media/Aboutimg.01227918c3eed2e06dbe.jpg",
     "static/media/sean-pollock-PhYq704ffdA-unsplash.jpg": "/Swift-constructions/static/media/sean-pollock-PhYq704ffdA-unsplash.87837059c319c6378f7a.jpg",
@@ -22,11 +22,11 @@
     "static/media/theodolite.png": "/Swift-constructions/static/media/theodolite.44a7f621702fafe34728.png",
     "index.html": "/Swift-constructions/index.html",
     "main.560f6132.css.map": "/Swift-constructions/static/css/main.560f6132.css.map",
-    "main.acc64e8b.js.map": "/Swift-constructions/static/js/main.acc64e8b.js.map",
+    "main.efa2f981.js.map": "/Swift-constructions/static/js/main.efa2f981.js.map",
     "453.8cc20e23.chunk.js.map": "/Swift-constructions/static/js/453.8cc20e23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.560f6132.css",
-    "static/js/main.acc64e8b.js"
+    "static/js/main.efa2f981.js"
   ]
 }
