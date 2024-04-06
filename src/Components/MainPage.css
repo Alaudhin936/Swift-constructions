@@ -100,8 +100,7 @@ body {
 .customer-review {
   background-image: url("./bgimg.jpg");
   background-size: cover;
-  height: 100vh;
-
+  height: 85vh;
   background-repeat: no-repeat;
 }
 
@@ -119,7 +118,7 @@ body {
 }
 .customer-review h1 {
   text-align: center;
-  color: gray;
+  
 }
 .customer-review h2 {
   display: flex;
@@ -511,7 +510,27 @@ ul li:hover {
   right: 10px;
   justify-content: flex-end;
 }
+.clients div{
+  border: 1px solid;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  width: 250px;
+}
+.clients{
+  background-color: rgb(34, 93, 120);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
 @media (max-width: 450px) {
+  .bla h1,h2{
+   font-size: 1.3em;
+  }
   .toUpImg img{
     top: 600px;
   }
@@ -520,6 +539,7 @@ ul li:hover {
   }
   .customer-review {
     background-size: cover;
+    height: 110vh;
     background-repeat: no-repeat;
   }
   .upper {
