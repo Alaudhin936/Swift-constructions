@@ -251,8 +251,7 @@ export default function MainPage() {
             <div className={animation ? "content-animation" : "right-content"}>
               {" "}
               <h2>History</h2>
-              "Swift Constructions emerged in 2023 as the brainchild of Charan,
-              Alaudhin, and Aravind, three ambitious friends united by their
+              "Swift Constructions emerged in 2023 as the brainchild of three ambitious friends united by their
               passion for construction innovation. Since our inception, we've
               embarked on a journey fueled by a shared vision: to redefine the
               construction industry landscape. With a focus on ingenuity and
